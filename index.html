@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اقامتگاه‌یار — کوپایلوت درآمد میزبانان ایران</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+<h2 class="sr-only">اقامتگاه‌یار — کوپایلوت درآمد میزبانان ایران</h2>
+<div class="app" id="app">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="logo-dot"><i class="ti ti-home" aria-hidden="true"></i></div>
+    اقامتگاه‌یار
+  </div>
+  <div class="nav-links">
+    <button class="nav-link active" onclick="goLanding('hero')">خانه</button>
+    <button class="nav-link" onclick="goLanding('features')">ویژگی‌ها</button>
+    <button class="nav-link" onclick="goLanding('pricing')">قیمت‌گذاری</button>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <button class="nav-link" onclick="go('dash')">ورود</button>
+    <button class="nav-cta" onclick="go('dash')">شروع رایگان</button>
+  </div>
+</nav>
+
+<!-- ════ LANDING ════ -->
+<div class="view active" id="view-landing">
+
+  <div class="hero" id="hero">
+    <div class="hero-eyebrow">
+      <i class="ti ti-sparkles" aria-hidden="true"></i>
+      کوپایلوت درآمد میزبانان ایران
+    </div>
+    <h1>درآمد اقامتگاهت را<br><span>هوشمندانه</span> مدیریت کن</h1>
+    <p class="hero-sub">از جاباما تا واتساپ — همه کانال‌ها، یک داشبورد، یک AI که هر روز به تو می‌گوید قیمت را بالا ببر یا تخفیف بده.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="go('dash')">
+        <i class="ti ti-layout-dashboard" aria-hidden="true"></i>
+        داشبورد را ببین
+      </button>
+      <button class="btn-ghost" onclick="goLanding('features')">ویژگی‌ها</button>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num">۳۸٪</div><div class="stat-lbl">افزایش متوسط درآمد</div></div>
+    <div class="stat-item"><div class="stat-num">۱۲۰۰+</div><div class="stat-lbl">میزبان فعال</div></div>
+    <div class="stat-item"><div class="stat-num">۶ کانال</div><div class="stat-lbl">یکپارچه در یک داشبورد</div></div>
+    <div class="stat-item"><div class="stat-num">۹۴٪</div><div class="stat-lbl">رضایت میزبانان</div></div>
+  </div>
+
+  <div class="features" id="features">
+    <div class="features-label">قابلیت‌ها</div>
+    <div class="feat-grid">
+      <div class="feat-cell">
+        <div class="feat-icon"><i class="ti ti-calendar" aria-hidden="true"></i></div>
+        <div class="feat-title">تقویم یکپارچه</div>
+        <div class="feat-desc">همه رزروهای جاباما، اتاقک، واتساپ و مستقیم در یک تقویم رنگی واضح.</div>
+      </div>
+      <div class="feat-cell">
+        <div class="feat-icon"><i class="ti ti-trending-up" aria-hidden="true"></i></div>
+        <div class="feat-title">قیمت‌گذاری هوشمند</div>
+        <div class="feat-desc">موتور AI بر اساس آخر هفته، تعطیلات، فصل و نرخ اشغال قیمت پیشنهادی می‌دهد.</div>
+      </div>
+      <div class="feat-cell">
+        <div class="feat-icon" style="background:var(--purple-bg)"><i class="ti ti-robot" aria-hidden="true" style="color:var(--purple-ink)"></i></div>
+        <div class="feat-title">کوپایلوت AI</div>
+        <div class="feat-desc">با AI چت کن — بپرس «نوروز را چقدر قیمت بگذارم؟» و جواب دقیق بگیر.</div>
+      </div>
+      <div class="feat-cell">
+        <div class="feat-icon"><i class="ti ti-bulb" aria-hidden="true"></i></div>
+        <div class="feat-title">پیشنهادهای روزانه</div>
+        <div class="feat-desc">هر روز صبح ۳ تا ۵ پیشنهاد درآمدی مشخص با دلیل و اثر احتمالی.</div>
+      </div>
+      <div class="feat-cell">
+        <div class="feat-icon"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
+        <div class="feat-title">تحلیل درآمد و کانال</div>
+        <div class="feat-desc">کدام کانال سودآورتر است؟ ماه به ماه درآمد را ببین و مقایسه کن.</div>
+      </div>
+      <div class="feat-cell">
+        <div class="feat-icon"><i class="ti ti-device-mobile" aria-hidden="true"></i></div>
+        <div class="feat-title">موبایل‌پسند</div>
+        <div class="feat-desc">طراحی واکنش‌گرا — از گوشی هم راحت کار می‌کند.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="how-section">
+    <div class="section-heading">چطور کار می‌کند؟</div>
+    <p class="section-sub">سه قدم تا رسیدن به درآمد بیشتر</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">۱</div>
+        <div>
+          <div class="step-title">اقامتگاهت را ثبت کن</div>
+          <div class="step-desc">نام، شهر، ظرفیت و قیمت پایه را وارد کن. کانال‌های رزرو را متصل کن.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">۲</div>
+        <div>
+          <div class="step-title">رزروها را وارد کن</div>
+          <div class="step-desc">رزروهای جدید را ثبت کن — از هر کانالی. تقویم خودکار به‌روز می‌شود.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">۳</div>
+        <div>
+          <div class="step-title">پیشنهادهای AI را اجرا کن</div>
+          <div class="step-desc">هر روز پیشنهادهای قیمتی دریافت کن. با کوپایلوت چت کن و تصمیم بگیر.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div class="pricing-section" id="pricing">
+    <div class="section-heading">پلن‌ها و قیمت‌ها</div>
+    <p class="section-sub">۱۴ روز رایگان برای همه پلن‌ها</p>
+    <div class="pricing-grid">
+      <div class="plan-card">
+        <div class="plan-name">پایه</div>
+        <div class="plan-price">۱۵۰,۰۰۰ <span>تومان / ماه</span></div>
+        <div class="plan-desc">برای میزبانی که یک اقامتگاه دارد و می‌خواهد شروع کند.</div>
+        <ul class="plan-features">
+          <li><i class="ti ti-check"></i> ۱ اقامتگاه</li>
+          <li><i class="ti ti-check"></i> تقویم یکپارچه</li>
+          <li><i class="ti ti-check"></i> پیشنهادهای روزانه</li>
+          <li><i class="ti ti-check"></i> ۳ کانال فروش</li>
+        </ul>
+        <button class="plan-btn plan-btn-ghost" onclick="go('dash')">شروع رایگان</button>
+      </div>
+      <div class="plan-card featured">
+        <div class="plan-badge">محبوب‌ترین</div>
+        <div class="plan-name">حرفه‌ای</div>
+        <div class="plan-price">۳۵۰,۰۰۰ <span>تومان / ماه</span></div>
+        <div class="plan-desc">برای میزبانی که چند اقامتگاه دارد و می‌خواهد از AI استفاده کند.</div>
+        <ul class="plan-features">
+          <li><i class="ti ti-check"></i> تا ۵ اقامتگاه</li>
+          <li><i class="ti ti-check"></i> کوپایلوت AI</li>
+          <li><i class="ti ti-check"></i> همه کانال‌ها</li>
+          <li><i class="ti ti-check"></i> تحلیل درآمد پیشرفته</li>
+          <li><i class="ti ti-check"></i> هشدار تقاضا</li>
+        </ul>
+        <button class="plan-btn plan-btn-dark" onclick="go('dash')">شروع رایگان</button>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">سازمانی</div>
+        <div class="plan-price">۸۵۰,۰۰۰ <span>تومان / ماه</span></div>
+        <div class="plan-desc">برای property managerها و زنجیره‌های کوچک اقامتگاهی.</div>
+        <ul class="plan-features">
+          <li><i class="ti ti-check"></i> اقامتگاه نامحدود</li>
+          <li><i class="ti ti-check"></i> Revenue management</li>
+          <li><i class="ti ti-check"></i> API اختصاصی</li>
+          <li><i class="ti ti-check"></i> پشتیبانی اختصاصی</li>
+          <li><i class="ti ti-check"></i> گزارش‌های سفارشی</li>
+        </ul>
+        <button class="plan-btn plan-btn-ghost" onclick="showToast('تیم فروش با شما تماس می‌گیرد')">تماس با فروش</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <div>
+      <div class="cta-band-title">آماده‌ای شروع کنی؟</div>
+      <div class="cta-band-sub">۱۴ روز رایگان، بدون نیاز به کارت بانکی.</div>
+    </div>
+    <button class="btn-white" onclick="go('dash')">داشبورد را امتحان کن</button>
+  </div>
+
+</div>
+
+<!-- ════ DASHBOARD ════ -->
+<div class="view" id="view-dash">
+  <div class="dash-wrap">
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="sb-label">منو</div>
+      <button class="sb-item active" id="sb-overview" onclick="dsec('overview',this)">
+        <i class="ti ti-layout-dashboard" aria-hidden="true"></i> داشبورد
+      </button>
+      <button class="sb-item" id="sb-recs" onclick="dsec('recs',this)">
+        <i class="ti ti-bulb" aria-hidden="true"></i> پیشنهادها
+        <span class="sb-badge">۵</span>
+      </button>
+      <button class="sb-item" id="sb-copilot" onclick="dsec('copilot',this)">
+        <i class="ti ti-robot" aria-hidden="true"></i> کوپایلوت AI
+        <span class="sb-badge" style="background:var(--purple)">NEW</span>
+      </button>
+      <button class="sb-item" id="sb-calendar" onclick="dsec('calendar',this)">
+        <i class="ti ti-calendar" aria-hidden="true"></i> تقویم
+      </button>
+      <div class="sb-label">مدیریت</div>
+      <button class="sb-item" id="sb-props" onclick="dsec('props',this)">
+        <i class="ti ti-home" aria-hidden="true"></i> اقامتگاه‌ها
+      </button>
+      <button class="sb-item" id="sb-booking" onclick="dsec('booking',this)">
+        <i class="ti ti-plus" aria-hidden="true"></i> ثبت رزرو
+      </button>
+      <div class="sb-label">تحلیل</div>
+      <button class="sb-item" id="sb-revenue" onclick="dsec('revenue',this)">
+        <i class="ti ti-chart-line" aria-hidden="true"></i> تحلیل درآمد
+      </button>
+      <button class="sb-item" id="sb-price" onclick="dsec('price',this)">
+        <i class="ti ti-currency-dollar" aria-hidden="true"></i> تحلیل قیمت
+      </button>
+      <button class="sb-item" id="sb-channels" onclick="dsec('channels',this)">
+        <i class="ti ti-chart-bar" aria-hidden="true"></i> کانال‌ها
+      </button>
+      <div class="sb-label">حساب</div>
+      <button class="sb-item" id="sb-settings" onclick="dsec('settings',this)">
+        <i class="ti ti-settings" aria-hidden="true"></i> تنظیمات
+      </button>
+    </aside>
+
+    <!-- main -->
+    <main class="dash-main">
+
+      <!-- OVERVIEW -->
+      <div class="dash-inner active" id="sec-overview">
+        <div class="dash-topbar">
+          <div>
+            <div class="dash-page-title">سلام، علی جان <span style="font-weight:400">👋</span></div>
+            <div class="dash-page-sub">امروز ۵ پیشنهاد قیمتی جدید داری</div>
+          </div>
+          <button class="btn-sm-dark" onclick="dsec('booking',document.getElementById('sb-booking'))">
+            <i class="ti ti-plus"></i> رزرو جدید
+          </button>
+        </div>
+
+        <div class="kpi-row">
+          <div class="kpi">
+            <div class="kpi-label">درآمد این ماه</div>
+            <div class="kpi-value">۴۵.۵M</div>
+            <div class="kpi-sub">تومان</div>
+            <div class="kpi-delta up"><i class="ti ti-trending-up" style="font-size:11px"></i> ۱۲٪ نسبت به ماه قبل</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">نرخ اشغال</div>
+            <div class="kpi-value">۶۸٪</div>
+            <div class="kpi-sub">۳۰ روز اخیر</div>
+            <div class="kpi-delta up"><i class="ti ti-trending-up" style="font-size:11px"></i> ۸٪ بیشتر</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">میانگین هر شب</div>
+            <div class="kpi-value">۵.۲M</div>
+            <div class="kpi-sub">تومان</div>
+            <div class="kpi-delta down"><i class="ti ti-trending-down" style="font-size:11px"></i> ۳٪ کمتر</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">شب‌های خالی</div>
+            <div class="kpi-value">۹</div>
+            <div class="kpi-sub">از ۳۰ روز آینده</div>
+            <div class="kpi-delta down"><i class="ti ti-alert-triangle" style="font-size:11px"></i> فرصت درآمد</div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <!-- top recs -->
+          <div class="card">
+            <div class="card-head">
+              <div class="card-title"><i class="ti ti-bulb" aria-hidden="true"></i> پیشنهادهای امروز</div>
+              <button class="card-action" onclick="dsec('recs',document.getElementById('sb-recs'))">همه <i class="ti ti-arrow-left" aria-hidden="true"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="rec-list">
+                <div class="rec-item hi">
+                  <div class="rec-icon-box"><i class="ti ti-trending-up" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="rec-item-title">قیمت جمعه را ۲۰٪ بالا ببر</div>
+                    <div class="rec-item-desc">جمعه هنوز خالی است — آخر هفته تقاضا معمولاً بیشتر است.</div>
+                    <div class="rec-item-tags"><span class="pill pill-green">اهمیت زیاد</span><span class="pill pill-gray">+۱M تومان</span></div>
+                  </div>
+                </div>
+                <div class="rec-item med">
+                  <div class="rec-icon-box"><i class="ti ti-tag" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="rec-item-title">تخفیف لحظه آخری بده</div>
+                    <div class="rec-item-desc">۳ روز آینده خالی است — ۱۵٪ تخفیف رزرو سریع می‌آورد.</div>
+                    <div class="rec-item-tags"><span class="pill pill-amber">متوسط</span><span class="pill pill-gray">کاهش خالی</span></div>
+                  </div>
+                </div>
+                <div class="rec-item hi">
+                  <div class="rec-icon-box"><i class="ti ti-alert-circle" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="rec-item-title">ارزان‌فروشی تعطیلات ممنوع</div>
+                    <div class="rec-item-desc">تعطیلات پیش‌رو را حداقل ۴۰٪ بالاتر قیمت‌گذاری کن.</div>
+                    <div class="rec-item-tags"><span class="pill pill-green">اهمیت زیاد</span><span class="pill pill-gray">جلوگیری از ضرر</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- recent bookings -->
+          <div class="card">
+            <div class="card-head">
+              <div class="card-title"><i class="ti ti-calendar" aria-hidden="true"></i> رزروهای اخیر</div>
+            </div>
+            <div class="card-body" style="padding:0 1.25rem">
+              <div class="bk-row">
+                <div>
+                  <div class="bk-name">خانواده احمدی</div>
+                  <div class="bk-meta">ویلای رامسر · ۳ شب · جاباما</div>
+                </div>
+                <div style="text-align:left">
+                  <div class="bk-price">۱۵M</div>
+                  <span class="pill pill-green">تایید</span>
+                </div>
+              </div>
+              <div class="bk-row">
+                <div>
+                  <div class="bk-name">آقای رضایی</div>
+                  <div class="bk-meta">ویلای رامسر · ۳ شب · واتساپ</div>
+                </div>
+                <div style="text-align:left">
+                  <div class="bk-price">۱۸M</div>
+                  <span class="pill pill-green">تایید</span>
+                </div>
+              </div>
+              <div class="bk-row">
+                <div>
+                  <div class="bk-name">خانم کریمی</div>
+                  <div class="bk-meta">ویلای رامسر · ۲ شب · اینستاگرام</div>
+                </div>
+                <div style="text-align:left">
+                  <div class="bk-price">۱۱M</div>
+                  <span class="pill pill-amber">در انتظار</span>
+                </div>
+              </div>
+              <div class="bk-row">
+                <div>
+                  <div class="bk-name">آقای محمدی</div>
+                  <div class="bk-meta">سوئیت تهران · ۳ شب · مستقیم</div>
+                </div>
+                <div style="text-align:left">
+                  <div class="bk-price">۷.۵M</div>
+                  <span class="pill pill-green">تایید</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- mini calendar -->
+        <div class="card">
+          <div class="card-head">
+            <div class="card-title"><i class="ti ti-calendar-month" aria-hidden="true"></i> تقویم این ماه</div>
+            <button class="card-action" onclick="dsec('calendar',document.getElementById('sb-calendar'))">تقویم کامل <i class="ti ti-arrow-left" aria-hidden="true"></i></button>
+          </div>
+          <div class="card-body">
+            <div class="mini-cal" id="mini-cal-root"></div>
+            <div style="display:flex;gap:1rem;margin-top:12px;flex-wrap:wrap">
+              <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-3)"><div style="width:10px;height:10px;border-radius:3px;background:var(--green-bg);border:1px solid #d1fae5"></div> رزرو شده</div>
+              <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-3)"><div style="width:10px;height:10px;border-radius:3px;background:var(--amber-bg);border:1px solid #fde68a"></div> فرصت قیمت</div>
+              <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-3)"><div style="width:10px;height:10px;border-radius:3px;background:var(--ink);"></div> امروز</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECS -->
+      <div class="dash-inner" id="sec-recs">
+        <div class="dash-topbar">
+          <div>
+            <div class="dash-page-title">پیشنهادهای امروز</div>
+            <div class="dash-page-sub">بر اساس تقویم، اشغال و روزهای ویژه</div>
+          </div>
+          <button class="btn-sm-dark" onclick="dsec('copilot',document.getElementById('sb-copilot'))">
+            <i class="ti ti-robot"></i> از AI بپرس
+          </button>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="rec-list">
+              <div class="rec-item hi">
+                <div class="rec-icon-box"><i class="ti ti-trending-up" aria-hidden="true"></i></div>
+                <div style="flex:1">
+                  <div class="rec-item-title">قیمت جمعه آینده را ۲۰٪ بالا ببر</div>
+                  <div class="rec-item-desc">جمعه هنوز خالی است. آخر هفته تقاضا بیشتر است؛ قیمت را از ۵M به ۶M تومان برسان.</div>
+                  <div class="rec-item-tags"><span class="pill pill-green">اهمیت زیاد</span><span class="pill pill-gray">افزایش درآمد</span><span class="pill pill-blue">+۱,۰۰۰,۰۰۰ تومان</span></div>
+                  <div class="rec-item-actions">
+                    <button class="btn-sm-dark" onclick="showToast('قیمت جمعه به ۶M تومان تغییر کرد')">اعمال</button>
+                    <button class="btn-sm-ghost">رد کردن</button>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-item med">
+                <div class="rec-icon-box"><i class="ti ti-tag" aria-hidden="true"></i></div>
+                <div style="flex:1">
+                  <div class="rec-item-title">تخفیف لحظه آخری ۱۵٪ بده</div>
+                  <div class="rec-item-desc">۳ روز آینده خالی است و کمتر از ۵ روز تا آن مانده. تخفیف کوتاه رزرو سریع می‌آورد.</div>
+                  <div class="rec-item-tags"><span class="pill pill-amber">متوسط</span><span class="pill pill-gray">کاهش شب خالی</span></div>
+                  <div class="rec-item-actions">
+                    <button class="btn-sm-dark" onclick="showToast('تخفیف ۱۵٪ اعمال شد')">اعمال</button>
+                    <button class="btn-sm-ghost">رد کردن</button>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-item hi">
+                <div class="rec-icon-box"><i class="ti ti-alert-circle" aria-hidden="true"></i></div>
+                <div style="flex:1">
+                  <div class="rec-item-title">تعطیلات را ارزان نفروش</div>
+                  <div class="rec-item-desc">تعطیلات رسمی ۲۰ روز دیگر است. قیمت این بازه باید حداقل ۴۰٪ بالاتر از قیمت عادی باشد.</div>
+                  <div class="rec-item-tags"><span class="pill pill-green">اهمیت زیاد</span><span class="pill pill-gray">جلوگیری از ارزان‌فروشی</span></div>
+                  <div class="rec-item-actions">
+                    <button class="btn-sm-dark" onclick="showToast('قیمت تعطیلات ۴۰٪ افزایش یافت')">اعمال</button>
+                    <button class="btn-sm-ghost">رد کردن</button>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-item hi">
+                <div class="rec-icon-box"><i class="ti ti-percentage" aria-hidden="true"></i></div>
+                <div style="flex:1">
+                  <div class="rec-item-title">نرخ اشغال بالاست — قیمت‌ها را بالا ببر</div>
+                  <div class="rec-item-desc">۱۴ روز آینده ۶۸٪ پر است. برای روزهای خالی باقی‌مانده قیمت را ۲۵٪ بالاتر بگذار.</div>
+                  <div class="rec-item-tags"><span class="pill pill-green">اهمیت زیاد</span><span class="pill pill-gray">افزایش درآمد</span></div>
+                  <div class="rec-item-actions">
+                    <button class="btn-sm-dark" onclick="showToast('قیمت ۲۵٪ افزایش یافت')">اعمال</button>
+                    <button class="btn-sm-ghost">رد کردن</button>
+                  </div>
+                </div>
+              </div>
+              <div class="rec-item lo">
+                <div class="rec-icon-box"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
+                <div style="flex:1">
+                  <div class="rec-item-title">کانال مستقیم را تقویت کن</div>
+                  <div class="rec-item-desc">بیشترین رزرو از جاباما آمده. رزرو مستقیم کمیسیون ندارد — قیمت آن را کمی بالاتر بگذار.</div>
+                  <div class="rec-item-tags"><span class="pill pill-gray">کم اهمیت</span><span class="pill pill-gray">افزایش سود خالص</span></div>
+                  <div class="rec-item-actions">
+                    <button class="btn-sm-ghost" onclick="showToast('یادداشت شد')">یادداشت</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI COPILOT -->
+      <div class="dash-inner" id="sec-copilot">
+        <div class="dash-topbar">
+          <div>
+            <div class="dash-page-title">کوپایلوت AI</div>
+            <div class="dash-page-sub">از AI بپرس چه قیمتی بگذاری، چه تخفیفی بدهی، و بازار چه می‌گوید</div>
+          </div>
+        </div>
+        <div class="copilot-wrap">
+          <div class="chat-area">
+            <div class="chat-header">
+              <div class="chat-header-icon"><i class="ti ti-robot"></i></div>
+              <div class="chat-header-info">
+                <div class="chat-header-name">دستیار قیمت‌گذاری</div>
+                <div class="chat-header-status">آنلاین</div>
+              </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+              <div class="chat-msg ai">
+                <div class="chat-avatar ai">AI</div>
+                <div class="chat-bubble">سلام علی جان! من دستیار قیمت‌گذاری توام. تقویم و رزروهای اقامتگاهت را دارم. بپرس چه قیمتی برای هر تاریخ مناسبه، یا کدوم روزها فرصت درآمد داری.</div>
+              </div>
+            </div>
+            <div class="chat-suggestions" id="chat-suggestions">
+              <button class="chat-sug" onclick="sendSug(this)">نوروز رو چقدر قیمت بگذارم؟</button>
+              <button class="chat-sug" onclick="sendSug(this)">این سه‌شنبه خالی مانده — تخفیف بدم؟</button>
+              <button class="chat-sug" onclick="sendSug(this)">درآمد ماه گذشته چطور بود؟</button>
+            </div>
+            <div class="chat-input-bar">
+              <input class="chat-input" id="chat-input" placeholder="بپرس..." onkeydown="if(event.key==='Enter')sendChat()">
+              <button class="chat-send" onclick="sendChat()"><i class="ti ti-send"></i></button>
+            </div>
+          </div>
+          <div class="copilot-sidebar">
+            <div class="card">
+              <div class="card-head"><div class="card-title"><i class="ti ti-chart-dots"></i> وضعیت فعلی</div></div>
+              <div class="card-body" style="display:flex;flex-direction:column;gap:1.2rem">
+                <div class="insight-item">
+                  <div class="insight-label">درآمد این ماه</div>
+                  <div class="insight-val">۴۵.۵M</div>
+                  <div class="insight-delta">↑ ۱۲٪ بیشتر از ماه قبل</div>
+                </div>
+                <div class="insight-item">
+                  <div class="insight-label">نرخ اشغال</div>
+                  <div class="insight-val">۶۸٪</div>
+                  <div class="insight-delta" style="color:var(--amber)">۹ شب هنوز خالی</div>
+                </div>
+                <div class="insight-item">
+                  <div class="insight-label">بهترین کانال</div>
+                  <div class="insight-val" style="font-size:18px">جاباما</div>
+                  <div class="insight-delta">۴۰٪ از کل درآمد</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-head"><div class="card-title"><i class="ti ti-calendar-event"></i> هشدارهای مهم</div></div>
+              <div class="card-body" style="display:flex;flex-direction:column;gap:8px">
+                <div style="padding:8px 10px;background:var(--amber-bg);border-radius:var(--r-sm);font-size:12.5px;color:var(--amber-ink)">
+                  <b>تعطیلات ۲۰ روز دیگر</b> — هنوز با قیمت عادی است
+                </div>
+                <div style="padding:8px 10px;background:var(--red-bg);border-radius:var(--r-sm);font-size:12.5px;color:var(--red-ink)">
+                  <b>جمعه خالی مانده</b> — قیمت پایین‌تر از بازار
+                </div>
+                <div style="padding:8px 10px;background:var(--green-bg);border-radius:var(--r-sm);font-size:12.5px;color:var(--green-ink)">
+                  <b>هفته آینده پر است</b> — خوب کار کردی
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALENDAR -->
+      <div class="dash-inner" id="sec-calendar">
+        <div class="dash-topbar">
+          <div class="dash-page-title">تقویم رزرو</div>
+          <div style="display:flex;gap:8px">
+            <select class="finput" style="font-size:13px;padding:7px 12px" data-property-select
+              onchange="STATE.activePropertyId = this.value || null; loadCalendar('big-cal-root', false)"></select>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" id="big-cal-root"></div>
+        </div>
+
+      </div>
+
+      <!-- PROPS -->
+      <div class="dash-inner" id="sec-props">
+        <div class="dash-topbar">
+          <div class="dash-page-title">اقامتگاه‌ها</div>
+          <button class="btn-sm-dark" onclick="showToast('فرم اضافه کردن اقامتگاه')"><i class="ti ti-plus"></i> اقامتگاه جدید</button>
+        </div>
+        <div class="prop-grid">
+          <div class="prop-card" onclick="showToast('مشاهده جزئیات ویلای رامسر')">
+            <div class="prop-card-name">ویلای استخردار رامسر</div>
+            <div class="prop-card-meta">رامسر · ۶ نفر · ۵,۰۰۰,۰۰۰ تومان / شب<br>ویلای استخردار نزدیک جنگل و دریا</div>
+            <div class="prop-card-footer">
+              <span class="pill pill-green">۶۸٪ اشغال</span>
+              <span style="font-size:12px;color:var(--ink-3)">۸ شب رزرو</span>
+            </div>
+          </div>
+          <div class="prop-card" onclick="showToast('مشاهده جزئیات سوئیت تهران')">
+            <div class="prop-card-name">سوئیت مدرن تهران</div>
+            <div class="prop-card-meta">تهران · ۲ نفر · ۲,۵۰۰,۰۰۰ تومان / شب<br>سوئیت مدرن در قلب شهر با امکانات کامل</div>
+            <div class="prop-card-footer">
+              <span class="pill pill-amber">۴۵٪ اشغال</span>
+              <span style="font-size:12px;color:var(--ink-3)">۳ شب رزرو</span>
+            </div>
+          </div>
+          <div class="prop-card" style="border-style:dashed;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--ink-3);font-size:13.5px;cursor:pointer;min-height:120px" onclick="showToast('فرم اضافه کردن اقامتگاه جدید')">
+            <i class="ti ti-plus" style="font-size:18px" aria-hidden="true"></i>
+            اقامتگاه جدید
+          </div>
+        </div>
+      </div>
+
+      <!-- BOOKING FORM -->
+      <div class="dash-inner" id="sec-booking">
+        <div class="dash-topbar">
+          <div class="dash-page-title">ثبت رزرو جدید</div>
+        </div>
+        <div class="card" style="max-width:640px">
+          <div class="card-body">
+            <form id="booking-form">
+              <div class="form-grid">
+                <div class="fg">
+                  <label class="flabel">اقامتگاه</label>
+                  <select class="finput" name="property_id" data-property-select required></select>
+                </div>
+                <div class="fg">
+                  <label class="flabel">نام مهمان</label>
+                  <input class="finput" type="text" name="guest_name" placeholder="خانواده احمدی" required>
+                </div>
+                <div class="fg">
+                  <label class="flabel">تاریخ ورود</label>
+                  <input class="finput" type="date" name="check_in_date" required>
+                </div>
+                <div class="fg">
+                  <label class="flabel">تاریخ خروج</label>
+                  <input class="finput" type="date" name="check_out_date" required>
+                </div>
+                <div class="fg">
+                  <label class="flabel">مبلغ کل (تومان)</label>
+                  <input class="finput" type="number" name="total_amount" placeholder="۵۰۰۰۰۰۰" required>
+                </div>
+                <div class="fg">
+                  <label class="flabel">کانال رزرو</label>
+                  <select class="finput" name="channel" required>
+                    <option value="jabama">جاباما</option>
+                    <option value="jajiga">جاجیگا</option>
+                    <option value="otaghak">اتاقک</option>
+                    <option value="shab">شب</option>
+                    <option value="whatsapp">واتساپ</option>
+                    <option value="instagram">اینستاگرام</option>
+                    <option value="direct_call">تماس مستقیم</option>
+                    <option value="other">سایر</option>
+                  </select>
+                </div>
+                <div class="fg">
+                  <label class="flabel">تعداد مهمان</label>
+                  <input class="finput" type="number" name="guest_count" placeholder="۴" value="2" required>
+                </div>
+                <div class="fg">
+                  <label class="flabel">وضعیت</label>
+                  <select class="finput" name="booking_status">
+                    <option value="confirmed">تایید شده</option>
+                    <option value="pending_payment" selected>در انتظار پرداخت</option>
+                  </select>
+                </div>
+              </div>
+              <div class="fg" style="margin-top:1rem">
+                <label class="flabel">یادداشت</label>
+                <textarea class="finput" name="internal_notes" rows="2" placeholder="نکات خاص مهمان..."></textarea>
+              </div>
+              <div style="display:flex;gap:10px;margin-top:1.5rem">
+                <button class="btn-sm-dark" type="submit">ثبت رزرو</button>
+                <button class="btn-sm-ghost" type="reset">پاک کردن</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVENUE ANALYTICS (NEW) -->
+
+      <div class="dash-inner" id="sec-revenue">
+        <div class="dash-topbar">
+          <div>
+            <div class="dash-page-title">تحلیل درآمد</div>
+            <div class="dash-page-sub">مقایسه ماه به ماه و پیش‌بینی</div>
+          </div>
+          <select class="finput" style="font-size:13px;padding:7px 12px">
+            <option>۶ ماه اخیر</option>
+            <option>۱۲ ماه اخیر</option>
+            <option>امسال</option>
+          </select>
+        </div>
+        <div class="kpi-row">
+          <div class="kpi">
+            <div class="kpi-label">درآمد کل امسال</div>
+            <div class="kpi-value">۲۲۸M</div>
+            <div class="kpi-sub">تومان</div>
+            <div class="kpi-delta up">↑ ۲۳٪ نسبت به سال قبل</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">بهترین ماه</div>
+            <div class="kpi-value">نوروز</div>
+            <div class="kpi-sub">۵۸M تومان</div>
+            <div class="kpi-delta up">↑ اشغال ۱۰۰٪</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">پیش‌بینی ماه آینده</div>
+            <div class="kpi-value">۴۸M</div>
+            <div class="kpi-sub">تومان</div>
+            <div class="kpi-delta up">↑ ۵٪ بیشتر</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">درآمد از دست رفته</div>
+            <div class="kpi-value">۱۲M</div>
+            <div class="kpi-sub">شب‌های خالی</div>
+            <div class="kpi-delta down">فرصت قیمت‌گذاری</div>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <div class="card-head"><div class="card-title"><i class="ti ti-chart-bar"></i> درآمد ماهانه</div></div>
+            <div class="card-body">
+              <div class="rev-chart-bar" id="rev-chart"></div>
+              <div style="display:flex;gap:1rem;margin-top:12px;font-size:12px;color:var(--ink-3)">
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:var(--ink);border-radius:2px;display:inline-block"></span>این دوره</span>
+                <span style="display:flex;align-items:center;gap:5px"><span style="width:10px;height:10px;background:var(--line);border-radius:2px;display:inline-block"></span>دوره قبل</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-head"><div class="card-title"><i class="ti ti-percentage"></i> نرخ اشغال ماهانه</div></div>
+            <div class="card-body">
+              <div class="rev-chart-bar" id="occ-chart"></div>
+              <div style="margin-top:12px;font-size:12px;color:var(--ink-3)">میانگین: ۶۳٪</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><div class="card-title"><i class="ti ti-scale"></i> مقایسه دو دوره</div></div>
+          <div class="compare-row">
+            <div class="compare-side">
+              <div class="compare-label">ماه جاری</div>
+              <div class="compare-val">۴۵.۵M</div>
+              <div class="compare-sub">تومان — ۶۸٪ اشغال</div>
+            </div>
+            <div class="compare-divider"></div>
+            <div class="compare-side">
+              <div class="compare-label">ماه قبل</div>
+              <div class="compare-val">۴۰.۶M</div>
+              <div class="compare-sub">تومان — ۶۰٪ اشغال</div>
+            </div>
+          </div>
+          <div style="padding:0.75rem 1.25rem;border-top:1px solid var(--line);font-size:13px;color:var(--green-ink);background:var(--green-bg)">
+            <i class="ti ti-trending-up" style="font-size:14px"></i> درآمد ۱۲٪ رشد داشته. اشغال ۸ امتیاز بیشتر شده.
+          </div>
+        </div>
+      </div>
+
+      <!-- PRICE ANALYSIS -->
+      <div class="dash-inner" id="sec-price">
+        <div class="dash-topbar">
+          <div class="dash-page-title">تحلیل قیمت‌گذاری</div>
+          <button class="btn-sm-dark" onclick="showToast('همه قیمت‌های پیشنهادی اعمال شدند')">اعمال همه</button>
+        </div>
+        <div class="card">
+          <div style="overflow-x:auto">
+            <table class="ptable">
+              <thead><tr>
+                <th>تاریخ</th><th>وضعیت</th><th>قیمت فعلی</th><th>قیمت پیشنهادی AI</th><th>تفاوت</th><th>دلیل</th><th>اقدام</th>
+              </tr></thead>
+              <tbody id="price-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHANNELS -->
+      <div class="dash-inner" id="sec-channels">
+        <div class="dash-topbar">
+          <div class="dash-page-title">کانال‌های فروش</div>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <div class="card-head"><div class="card-title"><i class="ti ti-chart-bar" aria-hidden="true"></i> سهم هر کانال</div></div>
+            <div class="card-body" id="ch-body"></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><div class="card-title"><i class="ti ti-trending-up"></i> عملکرد کانال</div></div>
+            <div class="card-body" id="ch-perf"></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><div class="card-title"><i class="ti ti-bulb"></i> پیشنهاد AI برای کانال‌ها</div></div>
+          <div class="card-body">
+            <div class="rec-list">
+              <div class="rec-item med">
+                <div class="rec-icon-box"><i class="ti ti-brand-instagram"></i></div>
+                <div>
+                  <div class="rec-item-title">اینستاگرام پتانسیل بیشتری دارد</div>
+                  <div class="rec-item-desc">فقط ۱۰٪ درآمد از اینستاگرام است اما نرخ تبدیل آن خوب است. با یک کد تخفیف اختصاصی بیشتر تبلیغ کن.</div>
+                  <div class="rec-item-tags"><span class="pill pill-amber">متوسط</span><span class="pill pill-gray">+۱۵٪ درآمد کانال</span></div>
+                </div>
+              </div>
+              <div class="rec-item lo">
+                <div class="rec-icon-box"><i class="ti ti-building"></i></div>
+                <div>
+                  <div class="rec-item-title">آژانس‌ها را فعال کن</div>
+                  <div class="rec-item-desc">آژانس هنوز در لیست کانال‌ها نیست. برای روزهای ضعیف می‌تواند بافر باشد.</div>
+                  <div class="rec-item-tags"><span class="pill pill-gray">کم اهمیت</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SETTINGS (NEW) -->
+      <div class="dash-inner" id="sec-settings">
+        <div class="dash-topbar">
+          <div class="dash-page-title">تنظیمات</div>
+        </div>
+
+        <!-- Profile -->
+        <div class="settings-section">
+          <div class="settings-label">پروفایل</div>
+          <div class="settings-row">
+            <div class="settings-item">
+              <div class="avatar-circle">ع</div>
+              <div class="settings-item-info">
+                <div class="settings-item-title">علی محمدی</div>
+                <div class="settings-item-desc">ali@example.com</div>
+              </div>
+              <button class="btn-sm-ghost" onclick="showToast('ویرایش پروفایل')">ویرایش</button>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">پلن فعلی</div>
+                <div class="settings-item-desc">حرفه‌ای · تا ۵ اقامتگاه</div>
+              </div>
+              <span class="pill pill-purple">حرفه‌ای</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="settings-section">
+          <div class="settings-label">اعلان‌ها</div>
+          <div class="settings-row">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">پیشنهاد روزانه AI</div>
+                <div class="settings-item-desc">هر روز صبح پیشنهادهای درآمدی دریافت کن</div>
+              </div>
+              <button class="toggle on" onclick="this.classList.toggle('on')"></button>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">هشدار شب خالی</div>
+                <div class="settings-item-desc">وقتی روزی خالی مانده و تقاضا بالاست</div>
+              </div>
+              <button class="toggle on" onclick="this.classList.toggle('on')"></button>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">هشدار تعطیلات</div>
+                <div class="settings-item-desc">۳ هفته قبل از تعطیلات رسمی</div>
+              </div>
+              <button class="toggle on" onclick="this.classList.toggle('on')"></button>
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">تایید رزرو جدید</div>
+                <div class="settings-item-desc">هنگام ثبت رزرو جدید پیام بگیر</div>
+              </div>
+              <button class="toggle" onclick="this.classList.toggle('on')"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Channels -->
+        <div class="settings-section">
+          <div class="settings-label">کانال‌های متصل</div>
+          <div class="settings-row">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">وضعیت کانال‌ها</div>
+                <div class="settings-item-desc">اتصال و مدیریت کانال‌های فروش</div>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="channel-chip connected"><i class="ti ti-check"></i> جاباما</span>
+                <span class="channel-chip connected"><i class="ti ti-check"></i> واتساپ</span>
+                <span class="channel-chip connected"><i class="ti ti-check"></i> اینستاگرام</span>
+                <span class="channel-chip" onclick="showToast('اتاقک متصل شد')"><i class="ti ti-plus"></i> اتاقک</span>
+                <span class="channel-chip" onclick="showToast('آژانس متصل شد')"><i class="ti ti-plus"></i> آژانس</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pricing Rules -->
+        <div class="settings-section">
+          <div class="settings-label">قوانین قیمت‌گذاری</div>
+          <div class="settings-row">
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">ضریب آخر هفته</div>
+                <div class="settings-item-desc">جمعه و شنبه چند درصد گران‌تر باشد</div>
+              </div>
+              <input class="finput" type="number" value="20" style="width:70px;text-align:center">
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">ضریب تعطیلات رسمی</div>
+                <div class="settings-item-desc">تعطیلات رسمی چند درصد گران‌تر باشد</div>
+              </div>
+              <input class="finput" type="number" value="40" style="width:70px;text-align:center">
+            </div>
+            <div class="settings-item">
+              <div class="settings-item-info">
+                <div class="settings-item-title">تخفیف لحظه آخری</div>
+                <div class="settings-item-desc">در ۳ روز قبل از شب خالی چند درصد تخفیف</div>
+              </div>
+              <input class="finput" type="number" value="15" style="width:70px;text-align:center">
+            </div>
+          </div>
+          <div style="margin-top:10px">
+            <button class="btn-sm-dark" onclick="showToast('قوانین ذخیره شدند')">ذخیره</button>
+          </div>
+        </div>
+
+        <button class="btn-sm-ghost" style="color:var(--red);border-color:var(--red)" onclick="showToast('از حساب خارج شدید')">خروج از حساب</button>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
